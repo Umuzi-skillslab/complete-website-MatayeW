@@ -1,30 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Contact Me</h1>
-    </div>
-    
-    <div>
+
+<header>
+    <h1>Contact</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
         <h2>Get In Touch</h2>
-        
+
         <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="">Select...</option>
+                <option value="general">General Enquiry</option>
+                <option value="project">Project Discussion</option>
+                <option value="other">Other</option>
+            </select>
+
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+
+                <input type="radio" id="contact-email" name="contact_method" value="email" required>
+                <label for="contact-email">Email</label>
+
+                <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                <label for="contact-phone">Phone</label> 
+
+            </fieldset>
+
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                Subscribe to newsletter
+            </label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required minlength="10" maxlegth="500"></textarea>
+
+            <button type="submit">Send</button>
+
         </form>
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+    </section>
+</main>
+
+<footer>
+    <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+</footer>
+
 </body>
 </html>
