@@ -13,7 +13,6 @@ header {
   background-color: #1a1a1a;
   color: white;
   padding: 20px;
-  /* Missing: proper alignment */
   text-align: center;
   width: 100%;
 }
@@ -26,7 +25,7 @@ header h1 {
 header nav a {
   letter-spacing: 0.5px;
 }
-
+/*flexbox to centre navigation links horizontally*/
 nav ul {
   display: flex;
   justify-content: center;
@@ -85,6 +84,21 @@ section {
   padding: 20px;
 }
 
+section img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+caption {
+    font-weight: bold;
+}
+
 .intro {
   padding: 30px;
   background-color: white;
@@ -127,6 +141,7 @@ select {
   border-radius: 5px;
 }
 
+/*Highlighting active form fields*/
 input:focus,
 textarea:focus,
 select:focus {
@@ -171,6 +186,11 @@ tr:hover {
   background: #f1f1f1;
 }
 
+/*Alternating row colours to improve table readability*/
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
 /*Aside Styling*/
 aside {
   text-align: center;
@@ -189,4 +209,16 @@ footer a {
   color: #ffffff;
 }
 
-/* Code quality issues: inconsistent spacing, poor naming, no comments */
+/* Fix radio buttons and checkboxes alignment */
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Keeping labels aligned nicely next to inputs */
+fieldset label {
+    display: inline-block;
+    margin-right: 15px;
+}
