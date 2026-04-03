@@ -125,12 +125,22 @@ This structure improves readability and accessibility
 The following screenshots are included in the screenshots folder:
 
 * Homepage
+![homepage screenshot](../screenshots/homepage.png)
 * Homepage(bottom) -the bottom section of the homepage
+![homepage(bottom) screenshot](../screenshots/homepage(bottom).png)
 * About page (with table)
+![About page screenshot](../screenshots/About.png)
 * About page table (hover state)
+![Hover state of table in about page](../screenshots/About(hover).png)
 * About(bottom)-the bottom of the about page below the table
+![About(bottom) screenshot](../screenshots/About(bottom).png)
 * Projects pages [each project is included and is numbered]
+![Projects1 screenshot](../screenshots/Projects.png)
+![Projects2 screenshot](../screenshots/Projects2.png)
+![Projects3 screenshot](../screenshots/Projects3.png)
+![Projects4 screenshot](../screenshots/Projects4.png)
 * Contact page
+![Contact page screenshot](../screenshots/Contact.png)
 
 
 ## Reflection
