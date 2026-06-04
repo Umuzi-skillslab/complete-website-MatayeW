@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio showcasing web development projects, skills, and contact information."/>
     <title>Home | My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
       <h1>My Portfolio</h1>
 
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" class="active" aria-current="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -20,16 +24,19 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section id="hero">
         <h2>Welcome to my Portfolio</h2>
         <p>
           I am a web developer passionate about creating beautiful websites.
         </p>
-        <img
-          src="images/hero.jpg"
-          alt="Hero banner showing web development work"
-        />
+
+        <figure>
+          <img src="images/hero.jpg" alt="Hero banner showing web development work" loading="lazy"/>
+
+        <figcaption> A showcase of my web development work.</figcaption>
+        </figure>  
+
       </section>
 
       <section class="intro">
