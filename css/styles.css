@@ -1,4 +1,21 @@
 /*base styles*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0077cc;
+  --secondary-hover: #005fa3;
+  --table-header: #3498db;
+  --text-color: #222;
+  --border-radius: 8px;
+  --radius-small: 5px;
+  --radius-medium: 8px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,6 +42,27 @@ header h1 {
 header nav a {
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #hero {
+    padding: 30px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
 /*flexbox to centre navigation links horizontally*/
 nav ul {
   display: flex;
@@ -41,29 +79,29 @@ nav ul li a {
   color: white;
   font-weight: bold;
   padding: 8px 12px;
-  border-radius: 5px;
+  border-radius: var(--radius-small);
   transition: background-color 0.3s ease;
 }
 
 nav ul li a.active {
-  background-color: #005f73;
-  border-radius: 5px;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-small);
 }
 
 nav ul li a:hover {
-  background-color: rgb(126, 123, 123);
-  border-radius: 5px;
+  background-color: var(--secondary-color);
+  border-radius: var(--radius-small);
 }
 
 a[href^="mailto"] {
-  color: #0077cc;
+  color: var(--secondary-color);
 }
 
 /*Hero section styling*/
 #hero {
-  background-color: #005f73;
+  background-color: var(--primary-color);
   color: white;
-  padding: 60px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -76,7 +114,7 @@ a[href^="mailto"] {
   width: 100%;
   max-width: 600px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 
 section {
@@ -90,7 +128,7 @@ section img {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   object-fit: cover;
   object-position: center;
 }
@@ -104,7 +142,13 @@ caption {
   background-color: white;
   margin: 20px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: var(--radius-medium);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .project {
@@ -112,12 +156,12 @@ caption {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
 .project img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: var(--radius-small);
 }
 
 /* Form styling */
@@ -127,7 +171,7 @@ form {
   padding: 20px;
   background-color: white;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: var(--radius-medium);
 }
 
 input,
@@ -138,29 +182,44 @@ select {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #aaa;
-  border-radius: 5px;
+  border-radius: var(--radius-small);
 }
 
 /*Highlighting active form fields*/
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #0077cc;
-  outline: none;
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
 }
 
 /*Button Styling*/
 button {
-  background-color: #0077cc;
+  background-color: var(--secondary-color);
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-small);
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: var(--secondary-hover);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input:disabled {
+  background-color: #eee;
 }
 
 /*Table styling*/
@@ -178,16 +237,12 @@ td {
 }
 
 th {
-  background-color: #3498db;
+  background-color: var(--table-header);
   color: white;
 }
 
-tr:hover {
-  background: #f1f1f1;
-}
-
 /*Alternating row colours to improve table readability*/
-tr:nth-child(even) {
+tr:nth-child(even):not(:hover) {
   background-color: #f2f2f2;
 }
 
@@ -198,7 +253,7 @@ aside {
 
 /*footer styling*/
 footer {
-  background-color: gray;
+  background-color: var(--text-color);
   color: white;
   padding: 20px;
   text-align: center;

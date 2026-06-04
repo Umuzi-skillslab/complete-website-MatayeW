@@ -3,48 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio showcasing web development projects, skills, and contact information."/>
+    <meta
+      name="description"
+      content="Personal portfolio showcasing web development projects, skills, and contact information."
+    />
     <title>Projects | My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+
     <header>
       <h1>Projects</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li>
+            <a href="projects.html" class="active" aria-current="page"
+              >Projects</a
+            >
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="project">
-        <article>
+    <main id="main-content">
+      <section class="projects-container">
+        <article class="project">
           <h2>Portfolio Website</h2>
-          <img src="images/project1.webp" alt="Portfolio Website screenshot" />
+          <figure>
+            <img
+              src="images/project1.webp"
+              alt="Portfolio Website screenshot"
+              loading="lazy"
+            />
+            <figcaption>Portfolio Website</figcaption>
+          </figure>
           <p>Responsive site built with HTML & CSS.</p>
         </article>
-      </section>
 
-      <section class="project">
-        <h2>E-commerce Site</h2>
-        <img src="images/project2.webp" alt="E-commerce website" />
-        <p>Modern product layout design.</p>
-      </section>
+        <article class="project">
+          <h2>E-commerce Site</h2>
+          <figure>
+            <img
+              src="images/project2.webp"
+              alt="E-commerce website"
+              loading="lazy"
+            />
+            <figcaption>E-commerce Website</figcaption>
+          </figure>
+          <p>Modern product layout design.</p>
+        </article>
 
-      <section class="project">
-        <h2>Landing Page</h2>
-        <img src="images/project3.png" alt="Landing page design" />
-        <p>Conversion-focused landing page.</p>
-      </section>
+        <article class="project">
+          <h2>Landing Page</h2>
+          <figure>
+            <img
+              src="images/project3.png"
+              alt="Landing page design"
+              loading="lazy"
+            />
+            <figcaption>Landing Page design</figcaption>
+          </figure>
+          <p>Conversion-focused landing page.</p>
+        </article>
 
-      <section class="project">
-        <h2>IoT Dashboard</h2>
-        <img src="images/project4.svg" alt="IoT Dashboard" />
-        <p>Dashboard interface showing real-time IoT data visualization></p>
+        <article class="project">
+          <h2>IoT Dashboard</h2>
+          <figure>
+            <img src="images/project4.svg" alt="IoT Dashboard" loading="lazy" />
+            <figcaption>IoT Dashboard</figcaption>
+          </figure>
+          <p>Dashboard interface showing real-time IoT data visualization.</p>
+        </article>
       </section>
 
       <aside>

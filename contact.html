@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal portfolio showcasing web development projects, skills, and contact information."/>
+    <meta
+      name="description"
+      content="Personal portfolio showcasing web development projects, skills, and contact information."
+    />
     <title>Contact | My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+
     <header>
       <h1>Contact</h1>
       <nav>
@@ -15,24 +20,42 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+          <li>
+            <a href="contact.html" class="active" aria-current="page"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section>
         <h2>Get In Touch</h2>
 
-        <form>
+        <form action="#" method="post">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required minlength="2" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+            minlength="2"
+            maxlength="50"
+          />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="yourname@example.com"
+            required
+          />
 
           <label for="subject">Subject:</label>
-          <select id="subject" name="subject">
+          <select id="subject" name="subject" required>
             <option value="">Select...</option>
             <option value="general">General Enquiry</option>
             <option value="project">Project Discussion</option>
@@ -78,6 +101,8 @@
             minlength="10"
             maxlength="500"
           ></textarea>
+
+          <div aria-live="polite"></div>
 
           <button type="submit">Send</button>
         </form>
