@@ -131,33 +131,29 @@ This structure improves readability and accessibility
 The following screenshots are included in the screenshots folder:
 
 - Homepage
-  ![homepage screenshot](screenshots/homepage.png)
+![homepage screenshot](<New Screenshots/homepage.png>)
 
 - Homepage(bottom) -the bottom section of the homepage
-![homepage(bottom) screenshot)](screenshots/homepage(bottom).png)
+![screenshot of bottom of homepage](<New Screenshots/homepage(bottom).png>)
 
 - About page (with table)
-![About page screenshot](screenshots/About.png)
-
+![about page screenshot](<New Screenshots/about.png>)
 - About page table (hover state)
-![about page table (hover state)](screenshots/About(hover).png)
+![screenshot of about page table with hover state](<New Screenshots/about(hover).png>)
 
 - About(bottom)-the bottom of the about page below the table
-![screenshot of bottom of about page](screenshots/About(bottom).png)
+![screenshot of bottom of about page](<New Screenshots/about(bottom).png>)
+- Projects page
+![screenshot of projects page](<New Screenshots/projects.png>)
 
-- Projects pages [each project is included and is numbered]
-
--project 1
-![project 1 screenshot](screenshots/Projects.png)
--project 2
-![project 2 screenshot](screenshots/Projects2.png)
--project 3
-![project 3 screenshot](screenshots/Projects3.png)
--project 4
-![project 4 screenshot](screenshots/Projects4.png)
+- Projects(bottom)-the bottom of the projects page
+![screenshot of bottom of projects page](<New Screenshots/projects(bottom).png>)
 
 - Contact page
-![contact page screenshot](screenshots/Contact.png)
+![screenshot of contact page](<New Screenshots/contact.png>)
+
+- Contact form 
+![screenshot of form on contact page](<New Screenshots/contact form.png>)
 
 
 
