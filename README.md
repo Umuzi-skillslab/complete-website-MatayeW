@@ -97,6 +97,7 @@ The following screenshots are included in the screenshots folder:
 
 - About page (with table)
 ![about page screenshot](<New Screenshots/about.png>)
+
 - About page table (hover state)
 ![screenshot of about page table with hover state](<New Screenshots/about(hover).png>)
 
