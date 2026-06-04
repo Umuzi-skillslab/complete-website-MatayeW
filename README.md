@@ -131,22 +131,35 @@ This structure improves readability and accessibility
 The following screenshots are included in the screenshots folder:
 
 - Homepage
-  ![homepage screenshot](../screenshots/homepage.png)
+  ![homepage screenshot](screenshots/homepage.png)
+
 - Homepage(bottom) -the bottom section of the homepage
-  ![homepage(bottom) screenshot](<../screenshots/homepage(bottom).png>)
+![homepage(bottom) screenshot)](screenshots/homepage(bottom).png)
+
 - About page (with table)
-  ![About page screenshot](../screenshots/About.png)
+![About page screenshot](screenshots/About.png)
+
 - About page table (hover state)
-  ![Hover state of table in about page](<../screenshots/About(hover).png>)
+![about page table (hover state)](screenshots/About(hover).png)
+
 - About(bottom)-the bottom of the about page below the table
-  ![About(bottom) screenshot](<../screenshots/About(bottom).png>)
+![screenshot of bottom of about page](screenshots/About(bottom).png)
+
 - Projects pages [each project is included and is numbered]
-  ![Projects1 screenshot](../screenshots/Projects.png)
-  ![Projects2 screenshot](../screenshots/Projects2.png)
-  ![Projects3 screenshot](../screenshots/Projects3.png)
-  ![Projects4 screenshot](../screenshots/Projects4.png)
+
+-project 1
+![project 1 screenshot](screenshots/Projects.png)
+-project 2
+![project 2 screenshot](screenshots/Projects2.png)
+-project 3
+![project 3 screenshot](screenshots/Projects3.png)
+-project 4
+![project 4 screenshot](screenshots/Projects4.png)
+
 - Contact page
-  ![Contact page screenshot](../screenshots/Contact.png)
+![contact page screenshot](screenshots/Contact.png)
+
+
 
 ## Reflection
 
